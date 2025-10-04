@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en" >
+    <head>
+        <title>Time difference calculator</title>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1><u>Time difference calculator</u></h1>
+        <div class="container">
+        <div class="input-area">
+        <br />
+        <h2>Enter start time:</h2>
+        <form>
+            <label for="startTime">Hours : </label>
+            <input type="number" min="0" max="24" id="startHour" />
+            <label for="startTime">Minutes : </label>
+            <input type="number" min="0" max="59" id="startMinute" />
+            <label for="startTime">Seconds : </label>
+            <input type="number" min="0" max="59" id="startSecond" />
+        
+        <br />
+        <h2>Enter end time:</h2>
+        
+            <label for="endTime">Hours : </label>
+            <input type="number" min="0" max="24" id="endHour" />
+            <label for="endTime">Minutes : </label>
+            <input type="number" min="0" max="59" id="endMinute" />
+            <label for="endTime">Seconds : </label>
+            <input type="number" min="0" max="59" id="endSecond" />
+            <br>
+            <br>
+            <button type="button" onclick="calculateDifference()" id ="calculate">Calculate</button>
+            <button type="reset" id = "reset">Cancel</button>
+
+        </form>
+
+        <h2>Difference:</h2>
+        <p id="result"></p>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
